@@ -10,7 +10,7 @@
 				<label for="">Finca</label>
 				<select name="finca_id" id="inputFinca_id" class="form-control" required>
                 <option>Por favor elija una Finca</option>
-					@foreach($finca as $finca)
+					@foreach($fincas as $finca)
 					<option value="{{$finca->id}}">{{$finca->municipio_fin}}</option>
 					@endforeach
 				</select>
