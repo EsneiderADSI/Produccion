@@ -17,27 +17,27 @@ Route::get('/', function ()
 });
 
 
-//-----cosecha controller-----------------------------------------------------------------------------
-//Route::get('/prueba', 'Controller@obtenerAccessToken');
+//-----estudiante controller-----------------------------------------------------------------------------
+
+Route::get('/prueba', 'Controller@obtenerAccessToken');
 Route::get('/cosechas', 'CosechasController@mostrarCosechas');
-//buscar cosecha por id
+//buscar estudiante por id
 Route::get('/cosechas/unico', 'CosechasController@mostrarCosecha');
 Route::post('/cosechas/unico', 'CosechasController@obtenerCosecha');
-//Nueva cosecha
+//Nuevo estudiante
 Route::post('/cosechas/agregar', 'CosechasController@crearCosecha');
 Route::get('/cosechas/agregar', 'CosechasController@agregarCosecha');
-//Actualizar cosecha
+//Actualizar estudiante
 Route::put('/cosechas/actualizar', 'CosechasController@actualizarCosecha');
 Route::post('/cosechas/actualizar', 'CosechasController@editarCosecha');
 Route::get('/cosechas/actualizar', 'CosechasController@elegirCosecha');
-//Eliminar cosecha
+//Eliminar estudiante
 Route::post('/cosechas/eliminar', 'CosechasController@eliminarCosecha');
 Route::get('/cosechas/eliminar', 'CosechasController@seleccionarCosecha');
 
 //-----siembra controller-----------------------------------------------------------------------------
 
 Route::get('/siembras', 'SiembrasController@mostrarSiembras');
-
 Route::post('/siembras/unico', 'SiembrasController@obtenerSiembra');
 Route::get('/siembras/unico', 'SiembrasController@mostrarSiembra');
 //agregar una siembra
@@ -66,14 +66,11 @@ Route::delete('/siembras/cosechas/eliminar', 'SiembraCosechasController@eliminar
 Route::post('/siembras/cosechas/eliminar', 'SiembraCosechasController@seleccionarCosechaSiembra');
 Route::get('/siembras/cosechas/eliminar', 'SiembraCosechasController@seleccionarSiembra');
 
-//------ mostrar las Personasiembras controller-------------------------------------------------------------------
+//------ Personasiembras controller-------------------------------------------------------------------
 Route::post('/personas/siembras', 'PersonaSiembrasController@mostrarSiembrasPersona');
 Route::get('/personas/siembras', 'PersonaSiembrasController@mostrarPersonas');
 
-
-//-----personas controller-----------------------------------------------------------------------------
 Route::get('/personas', 'PersonasController@mostrarPersonas');
-
 
 Route::post('/personas/unico', 'PersonasController@obtenerPersona');
 Route::get('/personas/unico', 'PersonasController@mostrarPersona');
@@ -88,43 +85,54 @@ Route::get('/personas/actualizar', 'PersonasController@elegirPersona');
 Route::post('/personas/eliminar', 'PersonasController@eliminarPersona');
 Route::get('/personas/eliminar', 'PersonasController@seleccionarPersona');
 
-
-
-
-// procedimientos productos
-//mostrar todos los productos
-Route::get('/productos/', 'ProductosController@mostrarProductos');
-//consultar un producto
-Route::post('/productos/unico', 'ProductosController@obtenerProducto');
-Route::get('/productos/unico', 'ProductosController@mostrarProducto');
-
-//agregar un producto
-Route::post('/productos/agregar', 'ProductosController@crearProducto');
-Route::get('/productos/agregar', 'ProductosController@agregarProducto');
-
-//actualizar un producto
-Route::put('/productos/actualizar', 'ProductosController@actualizarProducto');
-Route::post('/productos/actualizar', 'ProductosController@editarProducto');
-Route::get('/productos/actualizar', 'ProductosController@elegirProducto');
-
-//eliminiar un producto
-Route::post('/productos/eliminar', 'ProductosController@eliminarProducto');
-Route::get('/productos/eliminar', 'ProductosController@seleccionarProducto');
-
-
-//-----Procedimientos fincas-----------------------------------------------------------------------------
+//-----fincas controller-----------------------------------------------------------------------------
 Route::get('/fincas/', 'FincasController@mostrarFincas');
 //buscar fincas por id
 Route::get('/fincas/unico', 'FincasController@mostrarFinca');
 Route::post('/fincas/unico', 'FincasController@obtenerFinca');
-//agregar fincas
-Route::post('/personas/fincas/agregar', 'FincasPersonasController@crearFinca');
-Route::get('/personas/fincas/agregar', 'FincasPersonasController@agregarFinca');
+//Agregar finca
+Route::post('/persona/{idpersona}/finca/agregar', 'FincasPersonasController@crearFinca');
+Route::get('/persona/{idpersona}/finca/agregar', 'FincasPersonasController@agregarFinca');
+//Actualizar finca
+Route::put('/persona/{idpersona}/finca/actualizar', 'FincasPersonasController@actualizarFinca');
+Route::post('/persona/{idperson}/finca/actualizar', 'FincasPersonasController@editarFinca');
+Route::get('/persona/{idpersona}/finca/actualizar', 'FincasPersonasController@elegirFinca');
+//Eliminar finca
+Route::post('/persona/finca/eliminar', 'FincasPersonasController@eliminarFinca');
+Route::get('/persona/finca/eliminar', 'FincasPersonasController@seleccionarFinca');
 
-//Actualizar fincas
-Route::put('/fincas/actualizar', 'FincasController@actualizarFinca');
-Route::post('/fincas/actualizar', 'FincasController@editarFinca');
-Route::get('/fincas/actualizar', 'FincasController@elegirFinca');
-//Eliminar fincas
-Route::post('/fincas/eliminar', 'FincasController@eliminarFinca');
-Route::get('/fincas/eliminar', 'FincasController@seleccionarFinca');
+
+//-----novedades controller-----------------------------------------------------------------------------
+Route::get('/novedad/', 'NovedadesController@mostrarNovedades');
+
+
+Route::post('/novedad/unico', 'NovedadesController@obtenerNovedad');
+Route::get('/novedad/unico', 'NovedadesController@mostrarNovedad');
+
+Route::post('/novedad/agregar', 'NovedadesController@crearNovedad');
+
+Route::get('/novedad/agregar', 'NovedadesController@agregarNovedad');
+
+Route::put('/novedad/actualizar', 'NovedadesController@actualizarNovedad');
+Route::post('/novedad/actualizar', 'NovedadesController@editarNovedad');
+Route::get('/novedad/actualizar', 'NovedadesController@elegirNovedad');
+
+Route::post('/personas/eliminar', 'NovedadesController@eliminarNovedad');
+Route::get('/personas/eliminar', 'NovedadesController@seleccionarNovedad');
+
+//-----anopro controller-----------------------------------------------------------------------------
+Route::get('/renanos/', 'RenanosController@mostrarRenanos');
+//buscar renanos por id
+Route::get('/renanos/unico', 'RenanosController@mostrarRenano');
+Route::post('/renanos/unico', 'RenanosController@obtenerRenano');
+//Agregar renano
+Route::post('/siembra/{idsiembra}/renano/agregar', 'FincasPersonasController@crearRenanos');
+Route::get('/siembra/{idsiembra}/renano/agregar', 'FincasPersonasController@agregarRenano');
+//Actualizar renano
+Route::put('/siembra/{idsiembra}/renano/actualizar', 'RenanosSiembraController@actualizarRenano');
+Route::post('/siembra/{idsiembra}/renano/actualizar', 'RenanosSiembraController@editarRenanos');
+Route::get('/siembra/{idsiembra}/renano/actualizar', 'RenanosSiembraController@elegirRenano');
+//Eliminar renano
+Route::post('/siembra/renano/eliminar', 'RenanosSiembraController@eliminarRenanos');
+Route::get('/siembra/renano/eliminar', 'RenanosSiembraController@seleccionarRenanos');
+
