@@ -13,7 +13,7 @@
 		
 		<div class="form-group">
 				<label for="">Id_sue</label>
-				<input type="number" class="form-control" name="Id_Sue" required value="{{$suelo->id}}">
+				<input type="number" class="form-control" name="Id_sue" required value="{{$suelo->id}}">
 			</div>
             
 			<div class="form-group">

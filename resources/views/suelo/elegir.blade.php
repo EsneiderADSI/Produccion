@@ -10,8 +10,8 @@
 				<label for="">Suelos</label>
 				<select name="suelo_Id_sue" id="inputsuelo_Id_sue" class="form-control" required>
                 <option>Por favor elija un Suelo</option>
-					@foreach($suelos as $suelos)
-					<option value="{{$suelos->Id_sue}}">{{$suelos->Nombre_sue}}</option>
+					@foreach($suelo as $suelo)
+					<option value="{{$suelo->Id_sue}}">{{$suelo->Nombre_sue}}</option>
 					@endforeach
 				</select>
 			</div>
