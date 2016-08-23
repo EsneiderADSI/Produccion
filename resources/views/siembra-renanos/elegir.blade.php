@@ -4,7 +4,7 @@
 		
 		<form action="{{url('/renanos/actualizar')}}" method="POST" role="form">
 			{{csrf_field()}}
-			<legend>Elija una Finca</legend>
+			<legend>Elija una Año</legend>
 		
 			<div class="form-group">
 				<label for="">Año</label>
