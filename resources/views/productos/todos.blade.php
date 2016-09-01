@@ -27,12 +27,17 @@
 			</tbody>
 		</table>
 
+
+<button type="submit" class="btn btn-primary" onclick="history.back()">Volver atrás</button>
+      
 		@else
 
 		<div class="alert alert-danger">
 			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 			<strong>Ups</strong> No hay productos en este momento
 		</div>
+        
+        
 
 		@endif
 @endsection
