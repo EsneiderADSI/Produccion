@@ -16,6 +16,10 @@ Route::get('/', function ()
     return view('principal');
 });
 
+Route::get('/productor', function () 
+{
+    return view('productor');
+});
 
 //-----cosecha controller-----------------------------------------------------------------------------
 //Route::get('/prueba', 'Controller@obtenerAccessToken');
@@ -118,6 +122,7 @@ Route::get('/fincas/', 'FincasController@mostrarFincas');
 Route::get('/fincas/unico', 'FincasController@mostrarFinca');
 Route::post('/fincas/unico', 'FincasController@obtenerFinca');
 //agregar fincas
+
 Route::post('/personas/fincas/agregar', 'FincasPersonasController@crearFinca');
 Route::get('/personas/fincas/agregar', 'FincasPersonasController@agregarFinca');
 

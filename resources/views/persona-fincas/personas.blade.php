@@ -3,7 +3,7 @@
 @section('contenido')		
 		@if(sizeof($personas) > 0)
 
-		<form action="{{url('/personas/siembras')}}" method="POST" role="form">
+		<form action="{{url('/personas/fincas')}}" method="POST" role="form">
 			{{csrf_field()}}
 			<legend>Seleccione un Persona</legend>
 		
@@ -19,7 +19,7 @@
 		
 			
 		
-			<button type="submit" class="btn btn-primary">Obtener Siembras</button>
+			<button type="submit" class="btn btn-primary">Obtener Finca</button>
 		</form>
 
 		@else

@@ -19,16 +19,16 @@
 <div class="container">
 <!--siembras------------------------------->
 
-<div class="col-xs-2">
+<div class="col-xs-3">
    <div class="thumbnail">
    <img src="/images/siembras.png">
       <div class="caption">
-          <h4><a href="{{url('/siembras')}}" class="list-group-item"> Listar siembras</a></h4>
+          <h4 ><a href="{{url('/siembras')}}" class="list-group-item"> Listar siembras</a></h4>
       </div>
    </div>
  </div>
  
- <div class="col-xs-2">
+ <div class="col-xs-3">
    <div class="thumbnail">
   
    <img src="/images/siembra.png">
@@ -41,7 +41,7 @@ Consulta siembras por código
  </div>
  
 
-<div class="col-xs-2">
+<div class="col-xs-3">
    <div class="thumbnail">
    <img src="/images/Obtenersiempersona.png" >
       <div class="caption">
@@ -52,7 +52,7 @@ Consulta siembras por código
  
 <!--Productores------------------------------->
 
-<div class="col-xs-2">
+<div class="col-xs-3">
    <div class="thumbnail">
    <img src="/images/ObtenerTodosproductores.png" >
       <div class="caption">
@@ -60,8 +60,11 @@ Consulta siembras por código
       </div>
    </div>
  </div>
+</div>
 
-<div class="col-xs-2">
+
+<div class="container">
+<div class="col-xs-3">
    <div class="thumbnail">
    <img src="/images/persona.png" >
       <div class="caption">
@@ -72,7 +75,7 @@ Consulta siembras por código
 
 <!--Cosecchas------------------------------->
 
-<div class="col-xs-2">
+<div class="col-xs-3">
    <div class="thumbnail">
    <img src="/images/guayabas.png">
       <div class="caption">
@@ -81,13 +84,10 @@ Consulta siembras por código
    </div>
  </div>
 
-</div>
 
 
-<div class="container">
 
-
-<div class="col-xs-2">
+<div class="col-xs-3">
    <div class="thumbnail">
    <img src="/images/guayaba.png" >
       <div class="caption">
@@ -97,7 +97,7 @@ Consulta siembras por código
  </div>
 
 
-<div class="col-xs-2">
+<div class="col-xs-3">
    <div class="thumbnail">
    <img src="/images/Obtenercosechasiembra.png" class="">
       <div class="caption">
@@ -105,8 +105,10 @@ Consulta siembras por código
       </div>
    </div>
  </div>
+</div>
 
-<div class="col-xs-2">
+<div class="container">
+<div class="col-xs-3">
    <div class="thumbnail">
    
    <img src="/images/Obtenerrendimientocosecha.png" class="">
@@ -119,7 +121,7 @@ Consulta siembras por código
 
 <!--Fincas------------------------------->
 
-<div class="col-xs-2">
+<div class="col-xs-3">
    <div class="thumbnail">
    
    <img src="/images/fincaandfincas.png" class="">
@@ -130,7 +132,7 @@ Consulta siembras por código
  </div>
 
 
-<div class="col-xs-2">
+<div class="col-xs-3">
    <div class="thumbnail">
    
    <img src="/images/finca2.png" class="">
@@ -144,7 +146,7 @@ Consulta siembras por código
 
 <!--año------------------------------->
 
-<div class="col-xs-2">
+<div class="col-xs-3">
    <div class="thumbnail">
 
    <img src="/images/ObtenerTodosaños.png" class="">
@@ -153,22 +155,14 @@ Consulta siembras por código
       </div>
    </div>
  </div>
-
 </div>
 
+
+<!--Productos------------------------------->
 <div class="container">
-
-<div class="col-xs-2">
+<div class="col-xs-3">
    <div class="thumbnail">
-   <img src="/images/ObtenerTodosaños.png" class="">
-      <div class="caption">
-          <h4 ><a href="{{url('/anopro/unico')}}" class="list-group-item" >Obtener la Produccion de un Año</a></h4>
-      </div>
-   </div>
- </div>
-
-<div class="col-xs-2">
-   <div class="thumbnail">
+   
    <img src="/images/productos.png" class="">
       <div class="caption">
           <h4 ><a href="{{url('/productos')}}" class="list-group-item">Listar Todos los Productos</a></h4>
@@ -178,19 +172,9 @@ Consulta siembras por código
 
 
 
- <div class="col-xs-2">
-   <div class="thumbnail">
-   <img src="/images/guayaba.png" class="">
-      <div class="caption">
-          <h4 ><a href="{{url('/productos/unico')}}" class="list-group-item">Obtener un Producto </a></h4>
-      </div>
-   </div>
- </div>
- 
-
 <!--Suelos------------------------------->
 
-<div class="col-xs-2">
+<div class="col-xs-3">
    <div class="thumbnail">
    
    <img src="/images/suelos.png" class="">
@@ -199,57 +183,11 @@ Consulta siembras por código
       </div>
    </div>
  </div>
- 
- 
-  <div class="col-xs-2">
-   <div class="thumbnail">
-   <img src="/images/suelos.png" class="">
-      <div class="caption">
-          <h4 ><a href="{{url('/suelo/unico')}}" class="list-group-item">Buscar Suelo </a></h4>
-      </div>
-   </div>
- </div>
- 
- 
-<!--Usuarios------------------------------->
-
- <div class="col-xs-2">
-   <div class="thumbnail">
-   
-   <img src="/images/ObtenerTodosproductores.png" class="">
-      <div class="caption">
-          <h4 ><a href="{{url('/usuariocliente')}}" class="list-group-item">Listar Usuarios </a></h4>
-      </div>
-   </div>
- </div>
- 
-</div>
-
-
-<div class="container">
- 
-  <div class="col-xs-2">
-   <div class="thumbnail">
-   
-   <img src="/images/persona.png" class="">
-      <div class="caption">
-          <h4 ><a href="{{url('/usariocliente/unico')}}" class="list-group-item">Obtener un Usuario </a></h4>
-      </div>
-   </div>
- </div>
- 
- 
- 
- 
- 
- 
-
-
 
 
 <!--Novedades------------------------------->
 
-<div class="col-xs-2">
+<div class="col-xs-3">
    <div class="thumbnail">
    
    <img src="/images/ObtenerTodosnovedad.png" class="">
@@ -259,23 +197,127 @@ Consulta siembras por código
    </div>
  </div>
  
+ <div class="col-xs-3">
+   <div class="thumbnail">
+   
+   <img src="/images/suelo.png" class="">
+      <div class="caption">
+          <h4 ><a href="{{url('/suelo/unico')}}" class="list-group-item">Obtener Un Suelo </a></h4>
+      </div>
+   </div>
+ </div>
  
+</div>
+
+<div class="container">
+ <div class="col-xs-3">
+   <div class="thumbnail">
+   
+   <img src="/images/ObtenerTodosproductores.png" class="">
+      <div class="caption">
+          <h4 ><a href="{{url('/usuariocliente')}}" class="list-group-item">Listar Usuarios </a></h4>
+      </div>
+   </div>
+ </div>
  
- <div class="col-xs-2">
+ <div class="col-xs-3">
+   <div class="thumbnail">
+   
+   <img src="/images/persona.png" class="">
+      <div class="caption">
+          <h4 ><a href="{{url('/usariocliente/unico')}}" class="list-group-item">Obtener un Usuario </a></h4>
+      </div>
+   </div>
+ </div>
+ 
+ <div class="col-xs-3">
+   <div class="thumbnail">
+   
+   <img src="/images/guayaba.png" class="">
+      <div class="caption">
+          <h4 ><a href="{{url('/productos/unico')}}" class="list-group-item">Obtener un Producto </a></h4>
+      </div>
+   </div>
+ </div>
+ 
+ <div class="col-xs-3">
+   <div class="thumbnail">
+   
+   <img src="/images/ObtenerTodosnovedad.png" class="">
+      <div class="caption">
+          <h4 ><a href="{{url('/novedades')}}" class="list-group-item">Obtener Novedades </a></h4>
+      </div>
+   </div>
+ </div>
+</div>
+
+ <div class="container">
+ <div class="col-xs-3">
+   <div class="thumbnail">
+   <img src="/images/suelos.png" class="">
+      <div class="caption">
+          <h4 ><a href="{{url('/suelo/unico')}}" class="list-group-item">Buscar Suelo </a></h4>
+      </div>
+   </div>
+ </div>
+ 
+ <div class="col-xs-3">
    <div class="thumbnail">
    <img src="/images/ObtenerTodosnovedad.png" class="">
       <div class="caption">
-          <h4 ><a href="{{url('/novedades/unico')}}" class="list-group-item">Obtener una Novedad </a></h4>
+          <h4 ><a href="{{url('/novedades/unico')}}" class="list-group-item">Buscar Novedad </a></h4>
+      </div>
+   </div>
+ </div>
+ 
+ <div class="col-xs-3">
+   <div class="thumbnail">
+   <img src="/images/Obtenerrendimientocosecha.png" class="">
+      <div class="caption">
+          <h4 ><a href="{{url('/anospro')}}" class="list-group-item">Obtener Rendimiento al Año </a></h4>
+      </div>
+   </div>
+ </div>
+ </div>
+ 
+ 
+ <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand">Obtener Datos Hijos</a>
+    </div>
+     
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+<div class="col-xs-3">
+   <div class="thumbnail">
+   <img src="/images/Obtenercosechasiembra.png" width="" height="">
+      <div class="caption">
+          <h3><a href="{{url('/siembras/cosechas')}}" class="list-group-item">Obtener las Cosechas de Una Siembra</a></h3>
+         
       </div>
    </div>
  </div>
  
  
- 
- 
-
-
+ <div class="col-xs-3">
+   <div class="thumbnail">
+   <img src="/images/Obtenerrendimientocosecha.png" width="" height="">
+      <div class="caption">
+          <h3> <a href="{{url('/siembras/cosechas')}}" class="list-group-item">Obtener el rendimiento de la cosecha</a></h3>
+      </div>
+   </div>
  </div>
+</div>
  
  <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -290,11 +332,10 @@ Consulta siembras por código
     </div>
     </div>
   </div>
-
 </nav>
 
 <div class="container">
-<div class="col-xs-2">
+<div class="col-xs-3">
    <div class="thumbnail">
    <img src="/images/personas.png" width="" height="">
       <div class="dropdown" align="center">
@@ -314,7 +355,7 @@ Consulta siembras por código
  </div>
  </div>
  
- <div class="col-xs-2">
+ <div class="col-xs-3">
    <div class="thumbnail">
    <img src="/images/fincaandfincas.png">
    <p>
@@ -337,7 +378,7 @@ Consulta siembras por código
  
  
  
- <div class="col-xs-2">
+ <div class="col-xs-3">
    <div class="thumbnail">
    <img src="/images/guayabas.png" width="" height="">
    <p>
@@ -358,7 +399,7 @@ Consulta siembras por código
    </div>
  </div>
  
- <div class="col-xs-2">
+ <div class="col-xs-3">
    <div class="thumbnail">
    <img src="/images/productos.png" width="" height="">
    <p>
@@ -379,8 +420,10 @@ Consulta siembras por código
       </div>
    </div>
  </div>
-
-<div class="col-xs-2">
+ </div>
+ 
+ <div class="container">
+<div class="col-xs-3">
    <div class="thumbnail">
    <img src="/images/suelos.png" width="" height="">
       <div class="dropdown" align="center">
@@ -401,7 +444,7 @@ Consulta siembras por código
    </div>
  </div>
  
- <div class="col-xs-2">
+ <div class="col-xs-3">
    <div class="thumbnail">
    <img src="/images/agregar-usuarioverde.png" width="" height="">
       <div class="dropdown" align="center">
@@ -419,16 +462,14 @@ Consulta siembras por código
 
       </div>
    </div>
- </div> 
  </div>
 
  
-  <div class="container">
-  <div class="col-xs-2">
+  <div class="col-xs-3">
    <div class="thumbnail">
    <img src="/images/Obtenerrendimientocosecha.png" width="" height="">
       <div class="dropdown" align="center">
-             <button  class="btn btn-default dropdown-toggle" type="submit" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">G. Rend. al Año</h3>
+             <button  class="btn btn-default dropdown-toggle" type="submit" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Gestión Rendimiento Año</h3>
           <span class="caret"></span>
   </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
@@ -444,11 +485,11 @@ Consulta siembras por código
    </div>
  </div>
  
- <div class="col-xs-2">
+ <div class="col-xs-3">
    <div class="thumbnail">
    <img src="/images/Obtenercosechasiembra.png" width="" height="">
       <div class="dropdown" align="center">
-             <button  class="btn btn-default dropdown-toggle" type="submit" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">G. CosechaSiembra</h3>
+             <button  class="btn btn-default dropdown-toggle" type="submit" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Gestión Cosecha Siembra</h3>
           <span class="caret"></span>
   </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
@@ -463,14 +504,14 @@ Consulta siembras por código
       </div>
    </div>
  </div>
-
+</div>
  
-
-  <div class="col-xs-2">
+ <div class="container">
+  <div class="col-xs-3">
    <div class="thumbnail">
    <img src="/images/ObtenerTodosnovedad.png" width="" height="">
       <div class="dropdown" align="center">
-             <button  class="btn btn-default dropdown-toggle" type="submit" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">G. Novedades</h3>
+             <button  class="btn btn-default dropdown-toggle" type="submit" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Gestión Novedades</h3>
           <span class="caret"></span>
   </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
@@ -485,12 +526,7 @@ Consulta siembras por código
       </div>
    </div>
  </div>
- 
- 
- 
+
  </div>
- 
- 
- 
  
 @endsection

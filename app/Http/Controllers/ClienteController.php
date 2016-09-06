@@ -251,7 +251,7 @@ protected function almacenarProducto(Request $request)
     protected function almacenarFinca(Request $request)
     {
     	$accessToken = 'Bearer ' . $this->obtenerAccessToken();
-        $respuesta = $this->realizarPeticion('POST', 'http://agroproduccion.com:8889/personas/{personas}/fincas', ['headers' => ['Authorization' => $accessToken], 'form_params' => $request->all()]);
+        $respuesta = $this->realizarPeticion('POST', 'http://agroproduccion.com:8889/personas/{persona_id}/fincas', ['headers' => ['Authorization' => $accessToken], 'form_params' => $request->all()]);
     }
     protected function modificarFinca(Request $request)
     {
