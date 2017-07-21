@@ -11,7 +11,7 @@
 				<select name="siembra_id" id="inputSiembra_id" class="form-control" required>
                <option>Por favor elija un siembra</option>
 					@foreach($siembras as $siembra)
-					<option value="{{$siembra->id}}">{{$siembra->nombre_sie}}</option>
+					<option value="{{$siembra->id}}">{{$siembra->fecha_sie}}</option>
 					@endforeach
 				</select>
 			</div>

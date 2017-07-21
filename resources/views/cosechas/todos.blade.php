@@ -1,17 +1,23 @@
 @extends('layouts.master')
 @section('contenido')
 	@if(sizeof($cosechas) > 0)
+    <table class="table table-striped table-hover">
+     <tr>
+                      <td>PDF de cosechas</td>
+                      <td><a href="reporteCosecha/1" target="_blank" ><button class="btn btn-block btn-primary btn-xs">Ver</button></a></td>
+                      <td><a href="reporteCosecha/2" target="_blank" ><button class="btn btn-block btn-success btn-xs">Descargar</button></a></td>
+                      </tr>
 
+</table>
 		<table class="table table-striped table-hover">
 			<thead>
 				<tr>
-					<th>Id</th>
-					<th>fecha de cosecha</th>
-					<th>kilosp_cos </th>
-					<th>Kiloss_cos </th>
-					<th>kiloster_cos </th>
-					<th>kilosdes_cos </th>
-					<th>Kilosto_cos </th>
+                    <th>Id</th>
+					<th>Fecha de cosecha</th>
+					<th>Produccion esperada</th>
+					<th>Producion real</th>
+					<th>Destino</th>
+					<th>Observaciones</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -19,11 +25,10 @@
 				<tr>
 					<td>{{$cosecha->id}}</td>
 					<td>{{$cosecha->fecha_cos}}</td>
-					<td>{{$cosecha->kilosp_cos}}</td>
-					<td>{{$cosecha->Kiloss_cos}}</td>
-					<td>{{$cosecha->kiloster_cos}}</td>
-					<td>{{$cosecha->kilosdes_cos}}</td>
-					<td>{{$cosecha->Kilosto_cos}}</td>
+					<td>{{$cosecha->pro_esp_cos}}</td>
+					<td>{{$cosecha->prototal_cos}}</td>
+					<td>{{$cosecha->destino_cos}}</td>
+					<td>{{$cosecha->observaciones_cos}}</td>
 				</tr>
 				@endforeach
 			</tbody>

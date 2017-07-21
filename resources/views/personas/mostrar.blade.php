@@ -6,23 +6,19 @@
 			<thead>
 				<tr>
 					<th>Id</th>
-					<th>Nombre</th>
-					<th>Dirección</th>
-					<th>Teléfono</th>
-					<th>Profesión</th>
-					<th>Creación</th>
-					<th>Actualización</th>
+					<th>Nombre </th>
+					<th>Correo </th>
+					<th>Telefono </th>
+                    <th>Programa </th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
 					<td>{{$persona->id}}</td>
-					<td>{{$persona->cc_per}}</td>
 					<td>{{$persona->nombre_per}}</td>
-					<td>{{$persona->correo_per}}</td>
+                    <td>{{$persona->correo_per}}</td>
 					<td>{{$persona->telefono_per}}</td>
-					<td>{{$persona->created_at}}</td>
-					<td>{{$persona->updated_at}}</td>
+                    <td>{{$persona->programa_per}}</td>
 				</tr>
 			</tbody>
 		</table>	

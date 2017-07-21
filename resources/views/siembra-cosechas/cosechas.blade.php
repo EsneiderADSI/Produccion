@@ -6,13 +6,12 @@
 		<table class="table table-striped table-hover">
 			<thead>
 				<tr>
-					<th>Id</th>
-					<th>Nombre</th>
-					<th>kilosp_cos </th>
-					<th>Kiloss_cos</th>
-					<th>kiloster_cos </th>
-					<th>Creación</th>
-					<th>Actualización</th>
+                    <th>Id</th>
+					<th>Fecha de cosecha</th>
+					<th>Produccion esperada</th>
+					<th>Producion real</th>
+					<th>Destino</th>
+					<th>Observaciones</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -20,11 +19,10 @@
 				<tr>
 					<td>{{$cosecha->id}}</td>
 					<td>{{$cosecha->fecha_cos}}</td>
-					<td>{{$cosecha->kilosp_cos}}</td>
-					<td>{{$cosecha->Kiloss_cos}}</td>
-					<td>{{$cosecha->kiloster_cos}}</td>
-					<td>{{$cosecha->created_at}}</td>
-					<td>{{$cosecha->updated_at}}</td>
+					<td>{{$cosecha->pro_esp_cos}}</td>
+					<td>{{$cosecha->prototal_cos}}</td>
+					<td>{{$cosecha->destino_cos}}</td>
+					<td>{{$cosecha->observaciones_cos}}</td>
 				</tr>
 				@endforeach
 			</tbody>

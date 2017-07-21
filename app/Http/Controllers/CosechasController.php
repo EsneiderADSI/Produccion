@@ -25,8 +25,8 @@ class CosechasController extends ClienteController
     public function obtenerCosecha(UnicoRequest $request)
     {
         $id = $request->get('id');
-        $cosecha = $this->obtenerUnaCosecha($id);
-        return view('cosechas.mostrar', ['cosecha' => $cosecha]);
+		$cosecha = $this->obtenerUnaCosecha($id);
+       return view('cosechas.mostrar', ['cosecha' => $cosecha]);
     }
 	//métodos para agregar cosechas
     public function agregarCosecha()

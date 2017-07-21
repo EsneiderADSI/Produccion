@@ -15,8 +15,8 @@ class PersonaSiembrasController extends ClienteController
     }
     public function mostrarSiembrasPersona(Request $request)
     {
-    	$siembraId = $request->get('persona_id');
-    	$siembras = $this->obtenerSiembrasPersona($siembraId);
+    	$persona_id = $request->get('persona_id');
+    	$siembras = $this->obtenerSiembrasPersona($persona_id);
     	return view('persona-siembras.siembras', ['siembras' => $siembras]);
     }
 //Agregar siembra

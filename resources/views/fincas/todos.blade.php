@@ -1,44 +1,44 @@
 @extends('layouts.master')
 @section('contenido')
 	@if(sizeof($fincas) > 0)
+    <table class="table table-striped table-hover">
+     <tr>
+                      <td>PDF de fincas</td>
+                      <td><a href="crear_reporte/1" target="_blank" ><button class="btn btn-block btn-primary btn-xs">Ver</button></a></td>
+                      <td><a href="crear_reporte/2" target="_blank" ><button class="btn btn-block btn-success btn-xs">Descargar</button></a></td>
+                      </tr>
 
+</table>
 		<table class="table table-striped table-hover">
 			<thead>
+
+                     
 				<tr>
 					<th>Id</th>
-					<th>nombre_fin </th>
-                    <th>dapartamento_fin </th>
-					<th>municipio_fin </th>
-					<th>vereda_fin </th>
-					<th>latitudx </th>
-                    <th>latitudy </th>
-                    <th>viaacc_fin </th>
-                    <th>intgamilia_fin </th>
-                    <th>jovenes1518 </th>
-					<th>persona_id </th>
-					<th>created_at </th>
-                    <th>updated_at </th>
+					<th>Nombre</th>
+					<th>Municipio</th>
+					<th>Vereda</th>
+                    <th>Vias</th>
+                    <th>Propietario</th>
 				</tr>
+               
 			</thead>
 			<tbody>
 				@foreach($fincas as $finca)
 				<tr>
 					<td>{{$finca->id}}</td>
-					<td>{{$finca->nombre_fin}}</td>
-					<td>{{$finca->departamento_fin}}</td>
-					<td>{{$finca->vereda_fin}}</td>
-					<td>{{$finca->latitud}}</td>
-					<td>{{$finca->longitud}}</td>
-					<td>{{$finca->viaacc_fin}}</td>
-                    <td>{{$finca->intgamilia_fin}}</td>
-                    <td>{{$finca->jovenes1518}}</td>
+                    <td>{{$finca->nombre_fin}}</td>
+                    <td>{{$finca->municipio_fin}}</td>
+                    <td>{{$finca->vereda_fin}}</td>
+                    <td>{{$finca->viaacc_fin}}</td>
                     <td>{{$finca->persona_id}}</td>
-                    <td>{{$finca->created_at}}</td>
-                    <td>{{$finca->updated_at}}</td>
 				</tr>
 				@endforeach
 			</tbody>
 		</table>
+        
+         <td>
+         </td>
 
 		@else
 

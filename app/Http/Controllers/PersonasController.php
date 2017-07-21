@@ -22,8 +22,8 @@ class PersonasController extends ClienteController
     public function obtenerPersona(UnicoRequest $request)
     {
         $id = $request->get('id');
-        $persona = $this->obtenerUnaPersona($id);
-        return view('personas.mostrar', ['persona' => $persona]);
+        $personas = $this->obtenerUnaPersona($id);
+        return view('personas.mostrar', ['personas' => $personas]);
     }
     public function agregarPersona()
     {

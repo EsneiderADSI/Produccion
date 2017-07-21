@@ -6,12 +6,12 @@
 			<thead>
 				<tr>
 					<th>id</th>
-					<th>tipo_pro</th>
-					<th>nombre_pro </th>
-					<th>observaciones_pro</th>
+					<th>Tipo</th>
+					<th>Nombre </th>
+					<th>Observaciones</th>
                     <th>created_at</th>
                     <th>updated_at</th>
-				></tr>
+				</tr>
 			</thead>
 			<tbody>
 				<tr>

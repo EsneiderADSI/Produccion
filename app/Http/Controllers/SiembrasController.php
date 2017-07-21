@@ -21,7 +21,7 @@ class SiembrasController extends ClienteController
         $id = $request->get('id');
 		//echo $id;
         $siembra = $this->obtenerUnaSiembra($id);
-        return view('siembras.mostrar', ['siembra' => $siembra]);
+       return view('siembras.mostrar', ['siembras' => $siembras]);
     }
 	
 }	

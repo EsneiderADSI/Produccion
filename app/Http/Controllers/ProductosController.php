@@ -32,7 +32,7 @@ class ProductosController extends ClienteController
         return view('productos.unico');
     }
     
-	//métodos para agregar fincas
+	//métodos para agregar producto
     public function agregarProducto()
     {
         return view('productos.agregar');

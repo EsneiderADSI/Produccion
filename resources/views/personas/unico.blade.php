@@ -2,7 +2,7 @@
 
 @section('contenido')		
 		
-		<form action="{{url('/personas/unico')}}" method="POST" role="form">
+<form action="{{url('/personas/unico')}}" method="POST" role="form">
 			{{csrf_field()}}
 			<legend>Ingrese el Id del Persona</legend>
 		

@@ -21,7 +21,17 @@ Route::get('/productor', function ()
     return view('productor');
 });
 
-//-----cosecha controller-----------------------------------------------------------------------------
+Route::get('/administrador', function () 
+{
+    return view('administrador');
+});
+
+Route::get('/paracultivo', function () 
+{
+    return view('paracultivo');
+});
+//-----cosecha controller-------------------------------------------------------------
+
 //Route::get('/prueba', 'Controller@obtenerAccessToken');
 Route::get('/cosechas', 'CosechasController@mostrarCosechas');
 //buscar cosecha por id
@@ -38,7 +48,7 @@ Route::get('/cosechas/actualizar', 'CosechasController@elegirCosecha');
 Route::post('/cosechas/eliminar', 'CosechasController@eliminarCosecha');
 Route::get('/cosechas/eliminar', 'CosechasController@seleccionarCosecha');
 
-//-----siembra controller-----------------------------------------------------------------------------
+//-----siembra controller-------------------------------------------------------------
 
 Route::get('/siembras', 'SiembrasController@mostrarSiembras');
 
@@ -127,9 +137,107 @@ Route::post('/personas/fincas/agregar', 'FincasPersonasController@crearFinca');
 Route::get('/personas/fincas/agregar', 'FincasPersonasController@agregarFinca');
 
 //Actualizar fincas
-Route::put('/fincas/actualizar', 'FincasController@actualizarFinca');
-Route::post('/fincas/actualizar', 'FincasController@editarFinca');
-Route::get('/fincas/actualizar', 'FincasController@elegirFinca');
+Route::put('/personas/fincas/actualizar', 'FincasPersonasController@actualizarFinca');
+Route::post('/personas/fincas/actualizar', 'FincasPersonasController@editarFinca');
+Route::get('/personas/fincas/actualizar', 'FincasPersonasController@elegirFinca');
 //Eliminar fincas
-Route::post('/fincas/eliminar', 'FincasController@eliminarFinca');
-Route::get('/fincas/eliminar', 'FincasController@seleccionarFinca');
+Route::post('/personas/fincas/eliminar', 'FincasPersonasController@eliminarFinca');
+Route::get('/personas/fincas/eliminar', 'FincasPersonasController@seleccionarFinca');
+
+//-----novedades controller-----------------------------------------------------------------------------
+Route::get('/novedades/', 'NovedadesController@mostrarNovedades');
+
+
+Route::post('/novedades/unico', 'NovedadesController@obtenerNovedad');
+Route::get('/novedades/unico', 'NovedadesController@mostrarNovedad');
+
+Route::post('/siembras/novedades/agregar', 'NovedadesSiembrasController@crearNovedad');
+Route::get('/siembras/novedades/agregar', 'NovedadesSiembrasController@agregarNovedad');
+
+Route::put('/siembras/novedades/actualizar', 'NovedadesSiembrasController@actualizarNovedad');
+Route::post('/siembras/novedades/actualizar', 'NovedadesSiembrasController@editarNovedad');
+Route::get('/siembras/novedades/actualizar', 'NovedadesSiembrasController@elegirNovedad');
+
+Route::post('/siembras/novedades/eliminar', 'NovedadesSiembrasController@eliminarNovedad');
+Route::get('/siembras/novedades/eliminar', 'NovedadesSiembrasController@seleccionarNovedad');
+
+//-----renano controller-----------------------------------------------------------------------------
+Route::get('/renanos/', 'RenanosController@mostrarRenanos');
+//buscar renanos por id
+Route::get('/renanos/unico', 'RenanosController@mostrarRenano');
+Route::post('/renanos/unico', 'RenanosController@obtenerRenano');
+//Agregar renano
+Route::post('/siembras/renanos/agregar', 'RenanosSiembrasController@crearRenanos');
+Route::get('/siembras/renanos/agregar', 'RenanosSiembrasController@agregarRenano');
+//Actualizar renano
+Route::put('/siembras/renanos/actualizar', 'RenanosSiembrasController@actualizarRenano');
+Route::post('/siembras/renanos/actualizar', 'RenanosSiembrasController@editarRenano');
+Route::get('/siembras/renanos/actualizar', 'RenanosSiembrasController@elegirRenano');
+//Eliminar renano
+Route::post('/siembra/renanos/eliminar', 'RenanosSiembrasController@eliminarRenano');
+Route::get('/siembra/renanos/eliminar', 'RenanosSiembrasController@seleccionarRenanos');
+
+
+
+//---------------------------------------procedimientos para Suelos-----------------------------------------------
+Route::get('/suelos/', 'SuelosController@mostrarSuelos');
+//consultar un suelo
+Route::post('/suelos/unico', 'SuelosController@obtenerSuelo');
+Route::get('/suelos/unico', 'SuelosController@mostrarSuelo');
+
+//agregar un suelo
+Route::post('/suelos/agregar', 'SuelosController@crearSuelo');
+Route::get('/suelos/agregar', 'SuelosController@agregarSuelo');
+
+//actualizar un suelo
+Route::put('/suelos/actualizar', 'SuelosController@actualizarSuelo');
+Route::post('/suelos/actualizar', 'SuelosController@editarSuelo');
+Route::get('/suelos/actualizar', 'SuelosController@elegirSuelo');
+
+//eliminiar un suelo
+Route::post('/suelos/eliminar', 'SuelosController@eliminarSuelo');
+Route::get('/suelos/eliminar', 'SuelosController@seleccionarSuelo');
+
+//-----repor pdf-----------------------------------------------------------------------------
+
+Route::get('reportes', 'PdfController@index');
+Route::get('crear_reporte/{tipo}', 'PdfController@crear_reporte');
+Route::get('reporteNovedad/{tipo}', 'PdfController@reporteNovedad');
+Route::get('reporteSiembra/{tipo}', 'PdfController@reporteSiembra');
+Route::get('reportePersona/{tipo}', 'PdfController@reportePersona');
+Route::get('reporteProducto/{tipo}', 'PdfController@reporteProducto');
+Route::get('reporteCosecha/{tipo}', 'PdfController@reporteCosecha');
+Route::get('reporteRendimiento/{tipo}', 'PdfController@reporteRendimiento');
+Route::get('reporteCultivo/{tipo}', 'PdfController@reporteCultivo');
+
+
+
+
+//-----Procedimientos cultivos-----------------------------------------------------------------------------
+Route::get('/cultivos/', 'CultivosController@mostrarCultivos');
+//consultar un cultivo
+Route::post('/cultivos/unico', 'CultivosController@obtenerCultivo');
+Route::get('/cultivos/unico', 'CultivosController@mostrarCultivo');
+
+//agregar un cultvp
+Route::post('/cultivos/agregar', 'CultivosController@crearCultivo');
+Route::get('/cultivos/agregar', 'CultivosController@agregarCultivo');
+
+//actualizar un cultivo
+Route::put('/cultivos/actualizar', 'CultivosController@actualizarCultivo');
+Route::post('/cultivos/actualizar', 'CultivosController@editarCultivo');
+Route::get('/cultivos/actualizar', 'CultivosController@elegirCultivo');
+
+//eliminiar un cultivo
+Route::post('/cultivos/eliminar', 'CultivosController@eliminarCultivo');
+Route::get('/cultivos/eliminar', 'CultivosController@seleccionarCultivo');
+
+//---- reporte excel--------
+Route::resource('/excel/','ExcelController');
+
+
+
+
+
+
+
